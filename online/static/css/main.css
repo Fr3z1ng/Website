@@ -1,0 +1,988 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	background-color: #fff;
+	min-width: 320px;
+	height: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+section {
+	padding: 50px 0;
+}
+
+a {
+	color: #111;
+}
+
+a:hover {
+	color: #555;
+}
+
+/* Header */
+.navbar-light .navbar-nav .nav-link {
+	color: #111;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.top-menu li a::after {
+	content: '';
+	display: block;
+	width: 100%;
+	background-color: #111;
+	height: 1px;
+	transition: all .3s;
+	transform: scale(0);
+}
+
+.top-menu li a:hover::after {
+	transform: scale(1);
+}
+/* Header */
+/* Carousel */
+.my-carousel {
+	padding: 0;
+}
+
+.my-carousel .carousel-item {
+	display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+}
+
+.my-carousel .carousel-item img {
+	object-fit: cover;
+}
+/* Carousel */
+/* Footer */
+.footer {
+	background-color: #343434;
+}
+
+.footer h4 {
+	color: #ccc;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-bottom: 1px solid #666;
+	padding-bottom: 3px;
+}
+
+.footer a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+.footer a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.footer a, .footer li {
+	color: #c8c8c8;
+}
+
+.footer li a {
+	display: block;
+}
+
+.footer-icons a {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 20px;
+}
+/* Footer */
+
+.main {
+  position: relative;
+  min-height: 100vh;
+}
+
+.main:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../image/main4.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+
+.main h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+
+.main .card {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.main .card-body {
+  text-align: center;
+}
+
+.main .card-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.main .card-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+
+}
+
+
+.main .update-btn,
+.main .delete-btn {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.main .update-btn:hover,
+.main .delete-btn:hover {
+  background-color: #0062cc;
+}
+
+.main .add-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   text-align: center;
+}
+
+.main .add-btn {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 38px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #e91e63;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.main .add-btn:hover {
+  background-color: #c2185b;
+  color: white;
+  text-decoration: none;
+}
+
+.main .custom {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main .my_div {
+    top: 70%;
+}
+.main .custom {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main .custom {
+    top: 10%;
+    font-size: 28px;
+}
+
+.main .list-group-custom.item {
+    font-size: 18px;
+}
+
+.main .my_div {
+    top: 80%;
+}
+
+.main .custom {
+    top: 5%;
+    font-size: 24px;
+}
+
+.list-group-custom.item {
+    font-size: 16px;
+}
+
+
+.main .carousel-inner {
+   height: 400px;
+  transition: all 0.5s ease-in-out;
+}
+
+.main .pink-bg {
+background-color: #f8bbd0;
+padding: 20px;
+border-radius: 5px;
+}
+
+.main .pink-bg h3 {
+color: #fff;
+}
+/* Стили для блока формы */
+.main .form-group label {
+font-size: 1.2rem;
+font-weight: bold;
+margin-bottom: 10px;
+color: #fff;
+}
+.main .form-control {
+border-radius: 5px;
+border: none;
+background-color: #fff;
+padding: 15px;
+font-size: 1.2rem;
+color: #555;
+}
+
+.main .form-control:focus {
+box-shadow: none;
+outline: none;
+}
+.btn-primary {
+background-color: #c2185b;
+border: none;
+border-radius: 5px;
+font-size: 1.2rem;
+font-weight: bold;
+padding: 10px 30px;
+margin-top: 10px;
+}
+.btn-primary:hover {
+background-color: #ad1457;
+color: #fff;
+}
+
+.main .comment-form textarea {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main .comment-form button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 70px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #e91e63;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.main .comment-form button[type="submit"]:hover {
+  background-color: #c2185b;
+  color: white;
+  text-decoration: none;
+}
+
+/* Стили для блока профиля */
+.main .row-profile {
+  margin-bottom: 20px;
+}
+
+.main .card-profile {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .card-profile:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.main .card-profile-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.main .card-profile-body {
+  padding: 20px;
+}
+
+.main .card-profile-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main .card-profile-text {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.main .btn-profile {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #FF69B4;
+  border-color: #FF69B4;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .btn-profile:hover {
+  background-color: #FF1493;
+  border-color: #FF1493;
+}
+.main .card-profile-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 100%; /* или любое другое значение, подходящее для вашего дизайна */
+}
+/* Стили для блока профиль*/
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.profile {
+    position: relative;
+    width: 700px;
+    height: 450px;
+    border: 12px solid #fff;
+    border-top-right-radius: 35px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: relative; /* Добавляем позиционирование */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px;
+}
+
+.about {
+    position: absolute; /* Добавляем позиционирование */
+    top: 50%; /* Выравнивание по вертикали */
+    left: 50%; /* Выравнивание по горизонтали */
+    transform: translate(-50%, -50%); /* Центрирование */
+}
+
+.profile:hover .overlay {
+    opacity: 1
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.social-icons li {
+    width: 200px;
+    height: 25px;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 1s
+}
+
+.social-icons li:hover {
+    background: #fff;
+    color: #000
+}
+.social-icons li {
+    width: 200px;
+    height: 25px;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 1s
+}
+.social-icons-custom {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.social-icons-custom li {
+    width: 500px;
+    height: 25px;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 1s
+}
+.social-icons-custom li:hover {
+    background: #fff;
+    color: #000
+}
+.overlay .about {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 40%;
+    color: #fff;
+    flex: column
+}
+/* Стили для блока галерея */
+.main .portfolio-menu{
+	text-align:center;
+}
+.main .portfolio-menu-gallery ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.main .portfolio-item{
+	width:100%;
+}
+.main .portfolio-item .item img {
+  margin-top: 15px;
+  border: 3px solid;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+}
+/* Стили для блока услуги */
+
+.service-image {
+  width: 400px;
+  height: auto;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.service-details {
+  margin-top: 2rem;
+}
+
+.service-info-label {
+  font-weight: bold;
+}
+
+.service-time {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.service-pros {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.service-minuses {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.service-pros li:before {
+  content: "+";
+  color: green;
+  margin-right: 5px;
+}
+
+.service-minuses li:before {
+  content: "-";
+  color: red;
+  margin-right: 5px;
+
+}
+
+.service-details p.lead {
+    color: #006400;
+    background-color: #F8E7E7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-info-label, .service-time, .service-cost p {
+    color: #006400;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-info-label, .service-time {
+    font-size: 24px;
+}
+
+.service-time {
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.service-cost {
+    background-color: #F8E7E7;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Стили для блока много услуг*/
+.avatar-wrapper {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #FFC2D2;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.articles-cost {
+  margin: 30px 0;
+}
+
+.article-wrapper-cost {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #FEEAEF;
+  border: 2px solid #C82333;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.article-wrapper-cost:first-of-type {
+  margin-top: 20px;
+}
+
+
+.article-body-cost {
+  flex: 1;
+}
+
+
+
+.service-info-a {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.service-info {
+  display: flex;
+  flex-direction: row-reverse; /* изменяем направление оси на обратное */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.service-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #C82333;
+  margin-left: 20px; /* изменяем margin-left на margin-right */
+}
+
+
+.read-more-cost {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #C82333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.read-more-cost:hover {
+  color: #ffffff;
+  background-color: #C82333;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  fill: currentColor;
+}
+
+.main .article-h2 {
+  color: black;
+}
+
+.main .article-p {
+  text-indent: 20px; /* Отступ первой строки */
+  line-height: 1.4; /* Высота строки */
+  font-size: 16px; /* Размер шрифта */
+  color: #333; /* Цвет текста */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Стили для блока логин*/
+.login {
+  background-color: #FFC0CB;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+  width: 50%;
+  margin: 5em auto;
+}
+
+.login h2 {
+  text-align: center;
+  color: #008080;
+  margin-bottom: 2em;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  background-color: #f2f2f2;
+}
+
+.login input[type="submit"] {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background-color: #005959;
+}
+
+.login a {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.btn-login {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 1em 2em;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.btn-login:hover,
+.btn-login:focus {
+  background-color: #005959;
+}
+
+.button-login {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+
+/* Стили для блока регистрации*/
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  height: 60px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+/* Стили для блока подтверждение регистрации confirm_email*/
+
+.confirm-email {
+  font-size: 24px;
+  font-weight: bold;
+  color: #008080;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.confirm-email a {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #008080;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa {
+  font-size: 6em;
+}
+
+.main .confirm {
+  font-size: 36px;
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* Стили для блока подтверждение регистрации password_change*/
+.password-change {
+  background-color: #FFC0CB;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+  width: 50%;
+  margin: 5em auto;
+}
+.password-change {
+  background-color: #FFC0CB;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+  width: 50%;
+  margin: 5em auto;
+}
+
+.password-change h2 {
+  text-align: center;
+  color: #008080;
+  margin-bottom: 2em;
+}
+
+.password-change form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.password-change input[type="text"],
+.password-change input[type="password"] {
+  width: 600px;
+  padding: 1em;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  background-color: #f2f2f2;
+}
+
+.password-change input[type="submit"] {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.password-change input[type="submit"]:hover {
+  background-color: #005959;
+}
+
+.password-change a {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.btn-login {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 1em 2em;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.btn-login:hover,
+.btn-login:focus {
+  background-color: #005959;
+}
+
+.button-login {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+/* Стили для блока подтверждение регистрации change_email_form*/
+/* Стили формы */
+.email_form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.email_form h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.form-group-email_form {
+  margin-bottom: 1.5rem;
+}
+
+.form-group-email_form p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group-email_form input[type="email"] {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.form-group-email_form input[type="email"]:focus {
+  outline: none;
+  border: 1px solid #007bff;
+}
+
+.form-group-email_form input[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-group-email_form input[type="submit"]:hover {
+  background-color: #0069d9;
+}
+.done-container {
+  text-align: justify;
+}
+.done h3{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+/* Стили для блока подтверждение регистрации django-admin */
+.container-delete {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.card-body-delete {
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card-text-delete {
+  margin-bottom: 20px;
+}
+
+.delete {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+i.fa.fa-cart-arrow-down {
+  font-size: 16px;
+}

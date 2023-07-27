@@ -1,0 +1,24 @@
+{% extends "base.html"%}
+{% load static %}
+{% block content %}
+{% if user.is_authenticated %}
+<h1 class="text-center  mt-3">Онлайн запись</h1>
+
+<div class="shadow p-4 mb-5 bg-body bg-body rounded text-black  m-5 ">
+    <form method="post" action="{% url 'booking:booking' %}" class="me-2 ms-2">
+        {% csrf_token %}
+        <!--input service-->
+        <div>
+            <h3 class="">Выбери услугу:</h3>
+            <select class="form-select" name="service">
+                {% for service in services %}
+                    <option value="{{service}}">{{service}}</option>
+                {% endfor %}
+            </select>
+        </div>
+            <br/>
+            <button type="submit" class="btn btn-primary text-white">Продолжить</button>
+    </form>
+</div>
+{% endif %}
+{% endblock %}
